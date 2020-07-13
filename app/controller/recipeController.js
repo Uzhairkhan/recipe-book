@@ -8,6 +8,7 @@ module.exports.list = (req, res) => {
 
 module.exports.create = (req, res) => {
   const { body, user } = req;
+  console.log(req.file);
   const recipe = new Recipe(body);
   recipe.user = user._id;
   recipe.images = req.file.path;

@@ -26,13 +26,16 @@ export default class Home extends Component {
       <div id="home">
         <Container>
           {recipes.map((recipe) => {
+            console.log("recipe", recipe);
             return (
               <Card style={{ width: "18rem" }} key={recipe._id}>
                 <Card.Img
                   variant="top"
                   id="card-image"
-                  src="holder.js/100px180"
-                  alt="img"
+                  src={recipe.images}
+                  alt=""
+                  width="50px"
+                  height="50px"
                 />
                 <Card.Body>
                   <Card.Title>{recipe.recipeName}</Card.Title>

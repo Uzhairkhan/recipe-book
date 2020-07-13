@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 const recipeSchema = new Schema({
   images: {
-    type: Array,
-    default: undefined,
+    type: String,
   },
+
   recipeName: {
     type: String,
     required: true,
@@ -14,12 +14,10 @@ const recipeSchema = new Schema({
     type: String,
   },
   ingredients: {
-    type: Array,
-    default: undefined,
+    type: String,
   },
   steps: {
-    type: Array,
-    default: undefined,
+    type: String,
   },
   user: {
     type: Schema.Types.ObjectId,

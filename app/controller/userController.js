@@ -12,7 +12,7 @@ module.exports.register = (req, res) => {
         User.findOne({ email: body.email })
           .then((user) => {
             if (user) {
-              res.json({ errors: "User Already Exists" });
+             return res.status(400).json({ errors: "User Already Exists" });
             } else {
               const user = new User(body);
               user
