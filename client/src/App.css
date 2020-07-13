@@ -1,0 +1,69 @@
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Fondamento', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Merienda One', cursive;
+font-family: 'Modak', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  margin-top: 60px;
+}
+
+a {
+  color: aliceblue;
+}
+
+#card-image {
+  border: 2px solid black;
+  height: 200px;
+}
+
+.button {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.button a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.button a:hover {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#heading {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 2.5em;
+}
+
+.credentials .row {
+  justify-content: center;
+  text-align: center;
+}
+
+.forms-page {
+  margin: 40px;
+}
+
+.form-field {
+  width: 40%;
+}
+
+.recipe-form .row .form-field {
+  margin: auto;
+  width: 50%;
+  border: 1px solid green;
+  padding: 10px;
+}
+
+.title h2 {
+  text-align: center;
+  width: 100%;
+}
