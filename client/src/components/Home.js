@@ -16,7 +16,6 @@ export default class Home extends Component {
       .get("http://localhost:3786/recipe/list")
       .then((response) => {
         const recipes = response.data;
-        
         this.setState({ recipes });
       })
       .catch((err) => console.log(err));
